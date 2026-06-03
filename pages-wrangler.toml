@@ -1,0 +1,6 @@
+# ===========================================================
+# Cloudflare Pages config — MetaEditor 5 Android UI (statis)
+# ===========================================================
+name = "metaeditor5-android"
+pages_build_output_dir = "public"
+compatibility_date = "2025-01-01"

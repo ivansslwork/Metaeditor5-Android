@@ -1,0 +1,15 @@
+{
+  "name": "metaeditor5-android",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MetaEditor 5 Android UI — MQL5 mobile editor with simulated compile. Deployable to Cloudflare Workers or Pages.",
+  "scripts": {
+    "dev": "wrangler dev --config worker/wrangler.toml",
+    "deploy:worker": "wrangler deploy --config worker/wrangler.toml",
+    "deploy:pages": "wrangler pages deploy public --project-name metaeditor5-android",
+    "preview": "npx http-server public -p 8080 -o"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}

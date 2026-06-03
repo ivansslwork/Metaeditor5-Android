@@ -1,0 +1,23 @@
+# ===========================================================
+# Cloudflare Worker — MetaEditor 5 Android UI
+# ===========================================================
+name = "metaeditor5-android"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+# Mengizinkan import file .html sebagai string (Text module).
+# Sehingga `import html from "./index.html"` berfungsi.
+rules = [
+  { type = "Text", globs = ["**/*.html"], fallthrough = true }
+]
+
+# Workers.dev subdomain otomatis aktif (https://metaeditor5-android.<akun>.workers.dev)
+workers_dev = true
+
+# --- (Opsional) custom domain ---
+# routes = [
+#   { pattern = "editor.contohdomain.com", custom_domain = true }
+# ]
+
+[observability]
+enabled = true
